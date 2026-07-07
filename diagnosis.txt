@@ -6,3 +6,12 @@ The code does:  elif days_since_last == 1 and today.weekday() != 6:
 The bug is on line 73
 The fix is: remove the != clause for today.weekday() != 6
 
+Bug # 5 (Last song on playlist not appearing)
+
+The docstring states:  This function returns all songs in the playlist.
+The code does: 
+    return [song.to_dict() for song in songs[:-1]]
+
+The bug is on line 66 of playlist_service.py
+The fix is remove the [:-1] next to songs
+

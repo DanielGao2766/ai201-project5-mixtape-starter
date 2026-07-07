@@ -6,6 +6,10 @@ defines 5 SQLAlchemy models: User, Song, Playlist, PlaylistSong, and Notificatio
 
 increments the streak each day a user listens
 Resets back to 1 if a day is skipped
+There are three functions in streak_service.py: 
+record_listening_event, update_listening_streak, and get_streak
+The update function is the logic behind the class while the record and get function are the input and output respectively 
+
 
 
 
